@@ -1,12 +1,52 @@
+/* soft reset do css */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSh0K7qt7F-noGKOWkIYzF4teBcYX16KAHy7gwDnAv1SmOoNCIY&usqp=CAU');
+    background-image: url('../img/fundo.jpg');
     background-size: auto 100vh;
-    font-family: Arial;
+    font-family: 'Source Code Pro', monospace;
     height: 100vh;
+    font-size: 12px;
+  }
+
+  /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    };
+  }
+
+  /* breakpoint */
+  @media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    };
+  }
+
+  /* breakpoint */
+  @media (min-width: 1200px) {
+    body {
+      font-size: 20px;
+    };
   }
   
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   .menu {
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+  
   }
   
   .menu ul {
@@ -16,6 +56,11 @@ body {
   
   .menu li {
     list-style: none;
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px 20px;
   }
   
   a {
@@ -31,8 +76,58 @@ body {
   .site-title {
     color: whitesmoke;
     text-align: center;
+
   }
   
+.site-title {
+  font-size: 4em;
+  font-family: 'Indie Flower', cursive;
+}
+
   .site-subtitle {
     font-style: italic;
+    font-family: 'Nanum Pen Script', cursive;
+  }
+
+  .portfolio {
+    padding: 2em;
+    height: 100vh;
+  }
+
+  .portfolio h2 {
+    font-family: 'Shadows Into Light', cursive;
+    color: whitesmoke;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  }
+
+  .portfolio .grid {
+    display: grid;
+    gap: 2em;
+  }
+
+  @media (min-width: 560px) {
+    .portfolio .grid {
+      grid-template-columns: 240px 240px;
+    } 
+  }
+
+  @media (min-width: 880px) {
+    .portfolio .grid {
+      grid-template-columns: repeat(3, 260px);
+      align-content: center;
+      justify-content: center;
+      height: calc(100vh - 48px - 8em);
+    } 
+  }
+  
+  .portfolio figure {
+    text-align: center;
+  }
+
+  .img-portfolio {
+    height: 180px;
+    width: 240px; 
+    object-fit: cover;
+    object-position: left bottom;
   }
