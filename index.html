@@ -7,34 +7,65 @@
   <title>Rhayane Fabres</title>
   <link rel="stylesheet" href="css/estilos.css">
   <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Shadows+Into+Light&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+  <script src="https://kit.fontawesome.com/78f082f98d.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
   <header>
     <nav class="menu">
-      <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#portfolio">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <div>
+    <div class="titulo">
       <h1 class="site-title">Rhayane Fabres</h1>
       <h2 class="site-subtitle">Estudante de Sistemas de Informação</h2>
     </div>
   </header>
-  <section class="portfolio">
-    <h2>Projetos</h2>
+  <section class="sobre container">
+    <h2>Sobre</h2>
 
+    <figure class="avatar">
+      <img src="https://pbs.twimg.com/profile_images/1260894203078418434/-1hOMOR7_400x400.jpg" alt="Rhayane Fabres">
+    </figure>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam eaque id sapiente. Libero dolore nesciunt facilis unde, provident ipsa tempora rem aspernatur corrupti consequatur eius vitae distinctio soluta perferendis officiis!</p>
+
+    <p>Dicta aut aliquid molestiae et esse illum, non quis eligendi vitae repellat deserunt rem iste est consequatur dolore ipsum consectetur, facilis similique sint dolor atque magnam. Neque et tenetur reiciendis?</p>
+
+    <p>Rem, sequi. Minus, saepe sit. Asperiores iure quis aliquid nobis earum ex pariatur, laboriosam reiciendis nihil? Omnis soluta vel natus autem dignissimos rerum consectetur architecto commodi. Ea error vel sint!</p>
+
+    <p>Este site foi construído durante a Imersão CSS da Alura <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a> ;)
+    </p>
+    
+  </section>
+  <section class="portfolio container" id="portfolio">
+    <h2>Projetos</h2>
     <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="./img/ecommerce.jpg" alt="eCommerce">
-        <figcaption>eCommerce</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/celular.jpg" alt="Mobile">
-        <figcaption>Mobile</figcaption>
-      </figure>
+
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portfolio" src="./img/ecommerce.jpg" alt="eCommerce">
+            <figcaption>eCommerce</figcaption>
+          </figure>
+
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img class="img-portfolio" src="./img/celular.jpg" alt="Mobile">
+          <figcaption>Mobile</figcaption>
+        </figure>
+        <div class="card-back">
+          Minhas costas
+        </div>
+      </div>  
+
       <figure>
         <img class="img-portfolio" src="./img/web.jpg" alt="web design">
         <figcaption>Web design</figcaption>
@@ -44,6 +75,27 @@
         <figcaption>Projetos Pessoais</figcaption>
       </figure>
     </div>  
+  </section>
+  
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/rhaycf">
+        <i class="fab fa-github-alt"></i>
+      </a>
+      <a target="_blank" href="https://twitter.com/FabresRhayane">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/fabres-rhayane/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a target="_blank" href="mailto:rhayanefabres@gmail.com">
+        <i class="far fa-envelope"></i>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/rhaycf/">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
   </section>
 </body>
 
